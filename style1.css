@@ -98,11 +98,15 @@ p {
     padding-right: 30px;
 }
 
-.btn-primary{
+.btn-primary {
+    background: #000000 !important;
     color: #ffffff !important;
-    background-color: #000000;
-    border: #000000;
-    
+    border: 1px solid #000000;
+}
+.btn-primary:hover {
+    background: #333333 !important;
+    color: #ffffff !important;
+    border-color: #333333;
 }
 
 .custom-button{
@@ -139,6 +143,25 @@ h1 {
   }
   .home-hero .hero-title {
     margin-top: 0 !important;
+  }
+  .home-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px; /* 1rem + 20px for extra spacing between buttons */
+    justify-content: center;
+    align-items: center;
+  }
+  .home-hero-buttons .btn {
+    min-width: 140px;
+  }
+  .btn-hero-contact {
+    background: #FFFFFF !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+  }
+  .btn-hero-contact:hover {
+    background: #000000 !important;
+    color: #FFFFFF !important;
   }
 
   h2 {
