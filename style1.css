@@ -238,8 +238,15 @@ h1 {
 .section-row {
     margin-bottom: 24px;
 }
+.section-row.align-items-start {
+    align-items: flex-start;
+}
 .section-text p {
     margin-bottom: 16px;
+}
+.section-text > h2:first-child {
+    margin-top: 0 !important;
+    padding-top: 0;
 }
 .section-media {
     margin-top: 24px;
@@ -251,6 +258,59 @@ h1 {
     display: block;
     border-radius: 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.image-expandable {
+    cursor: pointer;
+}
+/* Image lightbox – expanded view */
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.image-lightbox.image-lightbox-open {
+    opacity: 1;
+    visibility: visible;
+}
+.image-lightbox-content {
+    max-width: 95vw;
+    max-height: 95vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.image-lightbox-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+.image-lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 10000;
+}
+.image-lightbox-close:hover {
+    background: rgba(255,255,255,0.25);
 }
 @media (min-width: 992px) {
     .section-media {
@@ -275,7 +335,14 @@ h1 {
 .work-page .case-study-section > .row h2,
 .work-page .case-study-section > h2 {
     font-size: 26px !important;
+    margin-top: 0 !important;
     margin-bottom: 12px !important;  /* tight: header to subtitle/paragraph */
+}
+.work-page .case-study-section .section-text {
+    padding-top: 0;
+}
+.work-page .case-study-section .section-media {
+    padding-top: 0;
 }
 .work-page .case-study-section {
     margin-bottom: 28px;  /* between sections (end of content to next header) */

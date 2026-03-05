@@ -47,8 +47,9 @@
         <header class="case-study-header">
             <h1 class="case-study-title">Proposal Funding Performance Analysis</h1>
             <div class="case-study-meta">
-                <p>Tools: Power BI (DAX), SQL, Data Modeling, KPI Framework Design, Financial Aggregation Logic</p>
-                <p>Results: Built a centralized dashboard that highlighted differences in approval rates across categories and created a reusable framework for tracking funding performance.</p>
+                <p>Tools & Methods: Power BI (DAX), SQL, Data Modeling, KPI Framework Design</p>
+                <p>Results: Built a centralized dashboard that revealed differences in approval rates across categories and established a reusable KPI framework for tracking funding efficiency.
+                </p>
             </div>
         </header>
 
@@ -57,19 +58,19 @@
             <div class="row align-items-start section-row">
                 <div class="col-lg-6 section-text">
                     <h2>Business Context</h2>
-                    <p class="section-subtitle">Limited visibility into how funding requests converted into approvals.</p>
-                    <p>While supporting improvements to the NEAR Treasury platform’s data visibility, I noticed that funding approvals varied across categories but weren’t easy to evaluate in a structured way.</p>
-                    <p>Proposal data existed, but there wasn’t a simple way to see:</p>
-<ul class="case-study-list">
-    <li>Which categories had strong approval rates</li>
-    <li>Where requested funding wasn’t converting</li>
-    <li>How capital was distributed across programs</li>
-</ul>
-                        
-                        <p>This project was created to organize that information into something clear and measurable.</p>
+                    <p class="section-subtitle">Limited visibility into how funding requests translated into approved allocations</p>
+                    <p>Within the NEAR Treasury governance platform, contributors submit funding proposals requesting capital for ecosystem initiatives. While supporting platform enhancements, I observed that proposal data existed within the platform but lacked structured reporting to evaluate funding performance across categories.</p>
+                     <p>Key gaps included:</p>
+                    <ul class="case-study-list">
+                        <li>Approval efficiency</li>
+                        <li>Capital concentration</li>
+                        <li>Category-level performance variance</li>
+                    </ul>
+                    
+                    <p>To address this gap, I built a Power BI model to analyze proposal requests, approvals, and category-level performance, enabling structured evaluation of funding efficiency.</p>
                 </div>
                 <div class="col-lg-6 section-media">
-                    <img src="images/chart1.png" alt="Chart 1" class="case-study-img">
+                    <img src="images/chart1.png" alt="Chart 1" class="case-study-img image-expandable" tabindex="0" role="button" title="Click to expand">
                 </div>
             </div>
         </section>
@@ -79,15 +80,13 @@
             <div class="row section-row">
                 <div class="col-12 section-text">
                     <h2>Objective</h2>
-                    <p class="section-subtitle">Evaluating how effectively requested funding translated into approved capital.</p>
-                    <p>The goal was to evaluate how effectively requested funding converted into approved capital.</p>
-                    <p>Specifically, I wanted to understand:</p>
+                    <p class="section-subtitle">Evaluate funding conversion efficiency and category-level performance variance</p>
+                    <p>Key questions:</p>
 <ul class="case-study-list">
-                        <li>Which funding categories demonstrate the strongest approval performance?</li>
-                        <li> Where approval rates are underperforming relative to requested capital?</li>
-                        <li>How total requested funding compares to approved outcomes across segments?</li>
+                        <li>Which categories convert capital most effectively?</li>
+                        <li> Where is approval efficiency lagging?</li>
+                        <li>How concentrated is requested funding?</li>
                     </ul>
-                    <p>The focus was clarity — turning raw proposal data into something easier to interpret.</p>
                 </div>
             </div>
         </section>
@@ -97,8 +96,8 @@
             <div class="row align-items-start section-row">
                 <div class="col-lg-6 section-text">
                     <h2>Data & Approach</h2>
-                    <p class="section-subtitle">Structuring proposal data into consistent, comparable performance metrics.</p>
-                    <p><strong>I structured proposal-level data in Power BI and defined a small set of consistent metrics:</strong></p>
+                    <p class="section-subtitle">Proposal data was structured in Power BI using standardized performance metrics to enable clear category comparison</p>
+                   <p>Key performance metrics included:</p>
                     <ul class="case-study-list">
 
                         <li>Total Requested</li>
@@ -106,10 +105,10 @@
                         <li>Approval Rate %</li>
                         <li>Funding Utilization %</li>
                     </ul>
-                    <p>This created a simple framework for comparing categories side by side.</p>
+                    <p>Designed for side-by-side category comparison and repeatable KPI tracking.</p>
                 </div>
                 <div class="col-lg-6 section-media">
-                    <img src="images/chart2.png" alt="Chart 3" class="case-study-img">
+                    <img src="images/chart2.png" alt="Chart 3" class="case-study-img image-expandable" tabindex="0" role="button" title="Click to expand">
                 </div>
             </div>
         </section>
@@ -119,18 +118,13 @@
             <div class="row align-items-start section-row">
                 <div class="col-lg-6 section-text">
                     <h2>Key Insights</h2>
-                    <p class="section-subtitle">Identifying approval patterns and funding concentration trends.</p>
-                    <p><strong>Key Insights:</strong></p>  
-                    <p>A few patterns became clear:</p>
-                    <ul class="case-study-list">
-                        <li>Approval rates varied significantly by category.</li>
-                        <li>Some categories requested large amounts of funding but had lower approval efficiency.</li>
-                        <li>A small number of categories accounted for most requested capital, creating concentration risk.</li>
-                    </ul>
-                    <p>These patterns suggested a potential misalignment between capital allocation and approval performance.</p>
+                    <p class="section-subtitle">Approval efficiency and capital concentration varied significantly across categories</p>
+                   
+                   <p>Approval efficiency and capital concentration varied materially across categories, indicating allocation imbalances and differences in funding performance. Analysis revealed up to a 30% variance in approval efficiency between top and bottom-performing categories.</p>
+                   
                 </div>
                 <div class="col-lg-6 section-media">
-                    <img src="images/chart3.png" alt="Key Insights" class="case-study-img">
+                    <img src="images/chart3.png" alt="Key Insights" class="case-study-img image-expandable" tabindex="0" role="button" title="Click to expand">
                 </div>
             </div>
         </section>
@@ -141,15 +135,26 @@
             <div class="row section-row">
                 <div class="col-12 section-text">
                     <h2>Outcome & Impact</h2>
-                    <p class="section-subtitle">Creating clearer insight into funding performance and allocation efficiency.</p>
-                    <p>This dashboard organized proposal data into a clear reporting framework that made funding performance easier to evaluate.
+                    <p class="section-subtitle">Establish a reusable KPI framework for tracking funding efficiency</p>
+                    <p>Enabled:</p>
+                    <ul class="case-study-list">
+                        <li>Clear category comparison</li>
+                        <li>Executive-level reporting</li>
+                        <li>Repeatable performance tracking</li>
+                    </ul>
+                    <p>This analysis enabled leadership to evaluate funding performance at a system level rather than reviewing proposals individually.</p>
 
-It demonstrates how structured KPI modeling can improve visibility into allocation efficiency and support more informed decision-making.
-
-The framework can be reused to track funding performance over time.</p>
                 </div>
             </div>
         </section>
+    </div>
+
+    <!-- Image lightbox for expanded view -->
+    <div id="imageLightbox" class="image-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Expanded image view">
+        <button type="button" class="image-lightbox-close" aria-label="Close">&times;</button>
+        <div class="image-lightbox-content">
+            <img src="" alt="" id="imageLightboxImg">
+        </div>
     </div>
 
     <footer class="footer">
@@ -169,6 +174,48 @@ The framework can be reused to track funding performance over time.</p>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script>
+        (function() {
+            var lightbox = document.getElementById('imageLightbox');
+            var lightboxImg = document.getElementById('imageLightboxImg');
+            var closeBtn = lightbox.querySelector('.image-lightbox-close');
+            var expandableImages = document.querySelectorAll('.image-expandable');
+
+            function openLightbox(src, alt) {
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || 'Expanded view';
+                lightbox.classList.add('image-lightbox-open');
+                lightbox.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('image-lightbox-open');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+
+            expandableImages.forEach(function(img) {
+                img.addEventListener('click', function() {
+                    openLightbox(this.src, this.alt);
+                });
+                img.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openLightbox(this.src, this.alt);
+                    }
+                });
+            });
+
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && lightbox.classList.contains('image-lightbox-open')) closeLightbox();
+            });
+        })();
+    </script>
 </body>
 
 </html>
