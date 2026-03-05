@@ -451,10 +451,11 @@ h1 {
 .footer .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 400px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 .footer p {
@@ -634,7 +635,12 @@ img {
 /* Common styles for background containers */
 .background-container,
 .container-api,
-.footer,
+.footer {
+    text-align: center;
+}
+.footer .social-icons {
+    text-align: center;
+}
 .social-icons {
     text-align: left;
 }
