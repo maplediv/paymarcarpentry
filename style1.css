@@ -232,8 +232,13 @@ h1 {
 }
 .work-gallery {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(2, 1fr);
     gap: 24px 36px;
+=======
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 36px;
+>>>>>>> 0912fdeb0de1349e6578a9dfe74705e27261364e
     margin-bottom: 40px;
 }
 .work-gallery-item {
