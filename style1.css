@@ -233,7 +233,7 @@ h1 {
 .work-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px 36px;
+    gap: 36px;
     margin-bottom: 40px;
 }
 .work-gallery-item {
@@ -265,7 +265,7 @@ h1 {
 @media (max-width: 991px) {
     .work-gallery {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px 24px;
+        gap: 24px;
     }
 }
 @media (max-width: 575px) {
