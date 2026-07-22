@@ -48,19 +48,101 @@
             <p class="work-gallery-intro">A selection of recent finish carpentry and custom woodworking projects.</p>
         </header>
 
-        <div class="work-gallery">
-            <button type="button" class="work-gallery-item image-expandable" aria-label="View project photo 1">
-                <img src="images/IMG_1818.jpeg" alt="Finish carpentry project">
-            </button>
-            <button type="button" class="work-gallery-item image-expandable" aria-label="View project photo 2">
-                <img src="images/IMG_1819.jpeg" alt="Finish carpentry project">
-            </button>
-            <button type="button" class="work-gallery-item image-expandable" aria-label="View project photo 3">
-                <img src="images/IMG_1844.jpeg" alt="Finish carpentry project">
-            </button>
-            <button type="button" class="work-gallery-item image-expandable" aria-label="View hardwood stairs">
-                <img src="images/IMG_1963.jpeg" alt="Hardwood stairs and handrail">
-            </button>
+        <div class="work-carousel" role="region" aria-roledescription="carousel" aria-label="Selected work gallery">
+            <div class="work-carousel-viewport">
+                <div class="work-carousel-track">
+                    <figure class="work-carousel-slide is-active" data-index="0">
+                        <button type="button" class="work-carousel-image image-expandable" aria-label="Expand casement window installation photo">
+                            <img
+                                src="images/work/IMG_1818-sm.jpg"
+                                srcset="images/work/IMG_1818-sm.jpg 480w, images/work/IMG_1818.jpg 750w"
+                                sizes="(max-width: 575px) 92vw, 480px"
+                                width="750"
+                                height="1000"
+                                alt="Casement window with white frame and hardwood sill"
+                                data-full="images/work/IMG_1818.jpg"
+                                fetchpriority="high"
+                                decoding="async">
+                        </button>
+                        <figcaption class="work-carousel-caption">
+                            <h2 class="work-carousel-caption-title">Casement Window &amp; Hardwood Sill</h2>
+                            <p class="work-carousel-caption-text">Clean white casement installation with a custom hardwood sill—tight casing and a crisp interior finish.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="work-carousel-slide" data-index="1" aria-hidden="true">
+                        <button type="button" class="work-carousel-image image-expandable" aria-label="Expand awning window installation photo">
+                            <img
+                                data-src="images/work/IMG_1819-sm.jpg"
+                                data-srcset="images/work/IMG_1819-sm.jpg 480w, images/work/IMG_1819.jpg 750w"
+                                sizes="(max-width: 575px) 92vw, 480px"
+                                width="750"
+                                height="1000"
+                                alt="Recessed awning window with polished wood sill"
+                                data-full="images/work/IMG_1819.jpg"
+                                loading="lazy"
+                                decoding="async">
+                        </button>
+                        <figcaption class="work-carousel-caption">
+                            <h2 class="work-carousel-caption-title">Recessed Window Trim</h2>
+                            <p class="work-carousel-caption-text">Deep-set awning window with finished apron and polished wood sill, framed for a simple, lasting look.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="work-carousel-slide" data-index="2" aria-hidden="true">
+                        <button type="button" class="work-carousel-image image-expandable" aria-label="Expand entry door and built-in bench photo">
+                            <img
+                                data-src="images/work/IMG_1844-sm.jpg"
+                                data-srcset="images/work/IMG_1844-sm.jpg 480w, images/work/IMG_1844.jpg 750w"
+                                sizes="(max-width: 575px) 92vw, 480px"
+                                width="750"
+                                height="1000"
+                                alt="Entry door with reeded glass and oak built-in benches"
+                                data-full="images/work/IMG_1844.jpg"
+                                loading="lazy"
+                                decoding="async">
+                        </button>
+                        <figcaption class="work-carousel-caption">
+                            <h2 class="work-carousel-caption-title">Entry Door &amp; Built-In Seating</h2>
+                            <p class="work-carousel-caption-text">Modern entry with reeded glass, black hardware, and integrated oak benches that wrap the corner.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="work-carousel-slide" data-index="3" aria-hidden="true">
+                        <button type="button" class="work-carousel-image image-expandable" aria-label="Expand hardwood stairs photo">
+                            <img
+                                data-src="images/work/IMG_1963-sm.jpg"
+                                data-srcset="images/work/IMG_1963-sm.jpg 640w, images/work/IMG_1963.jpg 1000w"
+                                sizes="(max-width: 575px) 92vw, 480px"
+                                width="1000"
+                                height="750"
+                                alt="Hardwood stairs and matching handrail"
+                                data-full="images/work/IMG_1963.jpg"
+                                loading="lazy"
+                                decoding="async">
+                        </button>
+                        <figcaption class="work-carousel-caption">
+                            <h2 class="work-carousel-caption-title">Hardwood Stairs &amp; Handrail</h2>
+                            <p class="work-carousel-caption-text">Straight-run oak stairs with matching handrail—clear grain, even risers, and a clean finished install.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="work-carousel-controls">
+                <button type="button" class="work-carousel-btn work-carousel-prev" aria-label="Previous project">
+                    <span aria-hidden="true">&larr;</span>
+                </button>
+                <div class="work-carousel-dots" role="tablist" aria-label="Choose project">
+                    <button type="button" class="work-carousel-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1" data-index="0"></button>
+                    <button type="button" class="work-carousel-dot" role="tab" aria-selected="false" aria-label="Show project 2" data-index="1"></button>
+                    <button type="button" class="work-carousel-dot" role="tab" aria-selected="false" aria-label="Show project 3" data-index="2"></button>
+                    <button type="button" class="work-carousel-dot" role="tab" aria-selected="false" aria-label="Show project 4" data-index="3"></button>
+                </div>
+                <button type="button" class="work-carousel-btn work-carousel-next" aria-label="Next project">
+                    <span aria-hidden="true">&rarr;</span>
+                </button>
+            </div>
+            <p class="work-carousel-status" aria-live="polite" aria-atomic="true">
+                <span class="work-carousel-current">1</span> / <span class="work-carousel-total">4</span>
+            </p>
         </div>
     </div>
 
@@ -90,10 +172,68 @@
         crossorigin="anonymous"></script>
     <script>
         (function() {
+            var carousel = document.querySelector('.work-carousel');
+            if (!carousel) return;
+
+            var slides = Array.prototype.slice.call(carousel.querySelectorAll('.work-carousel-slide'));
+            var dots = Array.prototype.slice.call(carousel.querySelectorAll('.work-carousel-dot'));
+            var prevBtn = carousel.querySelector('.work-carousel-prev');
+            var nextBtn = carousel.querySelector('.work-carousel-next');
+            var currentEl = carousel.querySelector('.work-carousel-current');
+            var viewport = carousel.querySelector('.work-carousel-viewport');
+            var index = 0;
+            var touchStartX = 0;
+            var touchDeltaX = 0;
+
             var lightbox = document.getElementById('imageLightbox');
             var lightboxImg = document.getElementById('imageLightboxImg');
             var closeBtn = lightbox.querySelector('.image-lightbox-close');
-            var expandableItems = document.querySelectorAll('.work-gallery-item');
+
+            function loadSlideImage(slide) {
+                var img = slide.querySelector('img');
+                if (!img || img.getAttribute('src')) return;
+                var src = img.getAttribute('data-src');
+                var srcset = img.getAttribute('data-srcset');
+                if (src) img.setAttribute('src', src);
+                if (srcset) img.setAttribute('srcset', srcset);
+                img.removeAttribute('data-src');
+                img.removeAttribute('data-srcset');
+            }
+
+            function preloadAround(activeIndex) {
+                var neighbors = [
+                    slides[(activeIndex + 1) % slides.length],
+                    slides[(activeIndex - 1 + slides.length) % slides.length]
+                ];
+                var run = function() {
+                    neighbors.forEach(loadSlideImage);
+                };
+                if ('requestIdleCallback' in window) {
+                    window.requestIdleCallback(run, { timeout: 1200 });
+                } else {
+                    setTimeout(run, 200);
+                }
+            }
+
+            function goTo(nextIndex) {
+                index = (nextIndex + slides.length) % slides.length;
+                loadSlideImage(slides[index]);
+
+                slides.forEach(function(slide, i) {
+                    var active = i === index;
+                    slide.classList.toggle('is-active', active);
+                    slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+                });
+
+                dots.forEach(function(dot, i) {
+                    var active = i === index;
+                    dot.classList.toggle('is-active', active);
+                    dot.setAttribute('aria-selected', active ? 'true' : 'false');
+                });
+
+                if (currentEl) currentEl.textContent = String(index + 1);
+                preloadAround(index);
+            }
 
             function openLightbox(src, alt) {
                 lightboxImg.src = src;
@@ -109,10 +249,24 @@
                 document.body.style.overflow = '';
             }
 
-            expandableItems.forEach(function(item) {
-                item.addEventListener('click', function() {
-                    var img = this.querySelector('img');
-                    openLightbox(img.src, img.alt);
+            function lightboxOpen() {
+                return lightbox.classList.contains('image-lightbox-open');
+            }
+
+            prevBtn.addEventListener('click', function() { goTo(index - 1); });
+            nextBtn.addEventListener('click', function() { goTo(index + 1); });
+
+            dots.forEach(function(dot) {
+                dot.addEventListener('click', function() {
+                    goTo(parseInt(dot.getAttribute('data-index'), 10));
+                });
+            });
+
+            slides.forEach(function(slide) {
+                var btn = slide.querySelector('.work-carousel-image');
+                btn.addEventListener('click', function() {
+                    var img = btn.querySelector('img');
+                    openLightbox(img.getAttribute('data-full') || img.currentSrc || img.src, img.alt);
                 });
             });
 
@@ -120,9 +274,32 @@
             lightbox.addEventListener('click', function(e) {
                 if (e.target === lightbox) closeLightbox();
             });
+
             document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && lightbox.classList.contains('image-lightbox-open')) closeLightbox();
+                if (lightboxOpen()) {
+                    if (e.key === 'Escape') closeLightbox();
+                    return;
+                }
+                if (e.key === 'ArrowLeft') goTo(index - 1);
+                if (e.key === 'ArrowRight') goTo(index + 1);
             });
+
+            viewport.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+                touchDeltaX = 0;
+            }, { passive: true });
+
+            viewport.addEventListener('touchmove', function(e) {
+                touchDeltaX = e.changedTouches[0].screenX - touchStartX;
+            }, { passive: true });
+
+            viewport.addEventListener('touchend', function() {
+                if (Math.abs(touchDeltaX) < 50) return;
+                if (touchDeltaX < 0) goTo(index + 1);
+                else goTo(index - 1);
+            });
+
+            goTo(0);
         })();
     </script>
 </body>
