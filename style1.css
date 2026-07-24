@@ -368,30 +368,36 @@ h1 {
     outline: 2px solid #000;
     outline-offset: 3px;
 }
-.work-carousel-status {
-    text-align: center;
-    font-size: 14px !important;
-    color: #555;
-    margin: 12px 0 0 !important;
-    letter-spacing: 0.04em;
-}
 @media (max-width: 575px) {
     .work-gallery-title {
         font-size: 28px !important;
     }
     .work-carousel-image-band {
-        gap: 16px;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        gap: 12px;
+        box-sizing: border-box;
     }
     .work-carousel-viewport {
-        max-width: calc(100vw - 80px);
+        flex: 1 1 auto;
+        min-width: 0;
+        width: auto;
+        max-width: none;
+        overflow: visible;
+    }
+    .work-carousel-image {
+        width: 100%;
     }
     .work-carousel-btn img {
         width: 32px;
         height: 32px;
     }
     .work-carousel-image img {
-        max-width: calc(100vw - 80px);
-        max-height: 65vh;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
     }
     .work-carousel-caption {
         padding-top: 28px;
@@ -404,7 +410,7 @@ h1 {
     }
 }
 
-/* Work / Case study page  typography hierarchy for all content */
+/* Work / Case study page ï¿½ typography hierarchy for all content */
 .work-page {
     padding-top: 80px;
     padding-bottom: 60px;
@@ -476,7 +482,7 @@ h1 {
 .image-expandable {
     cursor: pointer;
 }
-/* Image lightbox  expanded view */
+/* Image lightbox ï¿½ expanded view */
 .image-lightbox {
     position: fixed;
     inset: 0;
@@ -602,7 +608,7 @@ h1 {
     .work-page .case-study-section .section-row {
         margin-bottom: 0;
     }
-    /* Remove last elements margin so gap after text sections = gap after image sections */
+    /* Remove last elementï¿½s margin so gap after text sections = gap after image sections */
     .work-page .case-study-section .section-text > *:last-child {
         margin-bottom: 0;
     }

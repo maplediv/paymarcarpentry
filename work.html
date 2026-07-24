@@ -62,7 +62,7 @@
                                 <img
                                     src="images/work/IMG_1818-sm.jpg"
                                     srcset="images/work/IMG_1818-sm.jpg 675w, images/work/IMG_1818.jpg 1200w"
-                                    sizes="(max-width: 575px) calc(100vw - 5rem), min(980px, calc(100vw - 200px))"
+                                    sizes="(max-width: 575px) calc(100vw - 6rem), min(980px, calc(100vw - 200px))"
                                     width="1200"
                                     height="1600"
                                     alt="Casement window with white frame and hardwood sill"
@@ -78,7 +78,7 @@
                                 <img
                                     data-src="images/work/IMG_1819-sm.jpg"
                                     data-srcset="images/work/IMG_1819-sm.jpg 675w, images/work/IMG_1819.jpg 1200w"
-                                    sizes="(max-width: 575px) calc(100vw - 5rem), min(980px, calc(100vw - 200px))"
+                                    sizes="(max-width: 575px) calc(100vw - 6rem), min(980px, calc(100vw - 200px))"
                                     width="1200"
                                     height="1600"
                                     alt="Recessed awning window with polished wood sill"
@@ -94,7 +94,7 @@
                                 <img
                                     data-src="images/work/IMG_1844-sm.jpg"
                                     data-srcset="images/work/IMG_1844-sm.jpg 675w, images/work/IMG_1844.jpg 1200w"
-                                    sizes="(max-width: 575px) calc(100vw - 5rem), min(980px, calc(100vw - 200px))"
+                                    sizes="(max-width: 575px) calc(100vw - 6rem), min(980px, calc(100vw - 200px))"
                                     width="1200"
                                     height="1600"
                                     alt="Entry door with reeded glass and oak built-in benches"
@@ -110,7 +110,7 @@
                                 <img
                                     data-src="images/work/IMG_1963-sm.jpg"
                                     data-srcset="images/work/IMG_1963-sm.jpg 900w, images/work/IMG_1963.jpg 1600w"
-                                    sizes="(max-width: 575px) calc(100vw - 5rem), min(980px, calc(100vw - 200px))"
+                                    sizes="(max-width: 575px) calc(100vw - 6rem), min(980px, calc(100vw - 200px))"
                                     width="1600"
                                     height="1200"
                                     alt="Hardwood stairs and matching handrail"
@@ -126,7 +126,7 @@
                                 <img
                                     data-src="images/work/leftledge-sm.jpg"
                                     data-srcset="images/work/leftledge-sm.jpg 675w, images/work/leftledge.jpg 1200w"
-                                    sizes="(max-width: 575px) calc(100vw - 5rem), min(980px, calc(100vw - 200px))"
+                                    sizes="(max-width: 575px) calc(100vw - 6rem), min(980px, calc(100vw - 200px))"
                                     width="1200"
                                     height="1600"
                                     alt="Custom hardwood ledge mounted along a wall"
@@ -142,7 +142,7 @@
                 </button>
             </div>
 
-            <div class="work-carousel-caption">
+            <div class="work-carousel-caption" aria-live="polite" aria-atomic="true">
                 <h2 class="work-carousel-caption-title">Casement Window &amp; Hardwood Sill</h2>
                 <p class="work-carousel-caption-text">Clean white casement installation with a custom hardwood sill—tight casing and a crisp interior finish.</p>
             </div>
@@ -156,9 +156,6 @@
                     <button type="button" class="work-carousel-dot" role="tab" aria-selected="false" aria-label="Show project 5" data-index="4"></button>
                 </div>
             </div>
-            <p class="work-carousel-status" aria-live="polite" aria-atomic="true">
-                <span class="work-carousel-current">1</span> / <span class="work-carousel-total">5</span>
-            </p>
         </div>
     </div>
 
@@ -195,7 +192,6 @@
             var dots = Array.prototype.slice.call(carousel.querySelectorAll('.work-carousel-dot'));
             var prevBtn = carousel.querySelector('.work-carousel-prev');
             var nextBtn = carousel.querySelector('.work-carousel-next');
-            var currentEl = carousel.querySelector('.work-carousel-current');
             var viewport = carousel.querySelector('.work-carousel-viewport');
             var captionTitle = carousel.querySelector('.work-carousel-caption-title');
             var captionText = carousel.querySelector('.work-carousel-caption-text');
@@ -255,7 +251,6 @@
                     dot.setAttribute('aria-selected', active ? 'true' : 'false');
                 });
 
-                if (currentEl) currentEl.textContent = String(index + 1);
                 preloadAround(index);
             }
 
